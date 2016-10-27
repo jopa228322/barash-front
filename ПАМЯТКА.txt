@@ -1,0 +1,12 @@
+					GIT
+git add . -доавить все
+git status
+git commit -m "name_commit" -закоммитить
+git pull-обновить
+git push-отправить
+
+
+
+					Gulp
+gulp watch
+npm rebuild node-sass -  версия сас не совпадает с версией npm
