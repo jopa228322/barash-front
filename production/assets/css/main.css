@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  height: 100%; }
+  body img {
+    width: 100%;
+    height: 100%; }
+
+html {
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all; }
+
+.container {
+  max-width: 1379px;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px; }
+
+.row {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .row > a:hover {
+    color: #9e9e9e; }
+
+.screen-1 {
+  height: 100%; }
+  .screen-1 > header {
+    height: 85px; }
+    .screen-1 > header .logoandmore {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 25.48%; }
+      .screen-1 > header .logoandmore .logo {
+        padding: 10px; }
+      .screen-1 > header .logoandmore .freshmeat {
+        font-size: 80%;
+        text-align: center; }
+        .screen-1 > header .logoandmore .freshmeat > h2 {
+          padding: 0;
+          margin: 10px 0 0;
+          font-family: "GillSansNovaBook";
+          font-size: 27.66px;
+          letter-spacing: 0.5px; }
+        .screen-1 > header .logoandmore .freshmeat > h5 {
+          padding: 0;
+          margin: 0 0 0;
+          font-family: "GillSansNovaBook";
+          font-size: 12.5px;
+          letter-spacing: 0.5px; }
+    .screen-1 > header .men {
+      width: 52%;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .screen-1 > header .men a {
+        color: #212121;
+        position: relative;
+        display: block;
+        font-family: "GillSansNovaBook";
+        font-size: 18px;
+        letter-spacing: 0.5px; }
+        .screen-1 > header .men a:before {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 24px;
+          width: 22px;
+          background-image: url("../img/barashub.png");
+          top: 0;
+          left: -32px;
+          -webkit-transition: 0.2s all;
+          transition: 0.2s all;
+          opacity: 0; }
+        .screen-1 > header .men a:hover:before {
+          opacity: 1; }
+        .screen-1 > header .men a:last-child:before {
+          background-image: none; }
+  .screen-1__bottom {
+    background-image: url("../img/fon.png");
+    height: -webkit-calc(100% - 85px);
+    height: calc(100% - 85px);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .screen-1 .welcome {
+    width: 55.58%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 15%; }
+    .screen-1 .welcome > h2 {
+      color: white;
+      padding-top: 16.03%;
+      letter-spacing: 1px;
+      font-size: 36px;
+      font-family: "GillSansNovaHeavy"; }
+    .screen-1 .welcome > a {
+      margin: 40px;
+      padding: 15px;
+      outline: 1px solid red;
+      color: white;
+      -webkit-transition: 0.5s all;
+      transition: 0.5s all; }
+    .screen-1 .welcome .bonline {
+      line-height: 1.5;
+      color: white; }
+      .screen-1 .welcome .bonline > h5 {
+        color: white;
+        font-family: "GillSansNovaLight";
+        font-size: 20px;
+        letter-spacing: 1px; }
+    .screen-1 .welcome .button-rectangle {
+      width: 295px;
+      text-align: center;
+      border: 2px solid #fff;
+      padding: 12px;
+      position: relative;
+      z-index: 3;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .screen-1 .welcome .button-rectangle > a {
+      color: white;
+      position: relative;
+      z-index: 3;
+      font-size: 24px;
+      font-family: "GillSansNovaLight"; }
+    .screen-1 .welcome .button-rectangle:before {
+      content: "";
+      opacity: 1;
+      border: 2px solid #fff;
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: 285px;
+      height: 52px;
+      z-index: 1;
+      padding: 3px; }
+    .screen-1 .welcome .button-rectangle:hover > a {
+      color: #9e9e9e;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+    .screen-1 .welcome .button-rectangle:hover:before {
+      opacity: 1;
+      left: 37px;
+      width: 207px;
+      background-color: #fff;
+      -webkit-transition: 0.8s;
+      transition: 0.8s;
+      -webkit-transform: skew(-50deg);
+      -moz-transform: skew(-50deg);
+      -o-transform: skew(-50deg); }
+  .screen-1 .left-column {
+    width: 49%;
+    background-image: url("../img/left-screen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 90%; }
+
+.screen-2 {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: none; }
+  .screen-2 .wrapper {
+    height: 100%; }
+    .screen-2 .wrapper .screen-2__left-column, .screen-2 .wrapper .screen-2__right-column {
+      width: 50%;
+      min-width: 640px;
+      height: 100%;
+      position: relative; }
+    .screen-2 .wrapper .screen-2__left-column {
+      background-color: white;
+      left: -50%;
+      -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.42);
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.42);
+      background-image: url("../img/left-screen.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: +97% 0; }
+    .screen-2 .wrapper .screen-2__right-column {
+      background-color: white;
+      right: -50%;
+      -webkit-box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.42);
+      box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.42); }
+      .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 3%;
+        padding-bottom: 3%; }
+        .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan .screen-2__right-column__opisan__produk .screen-2__right-column__opisan__produk__obertk {
+          margin: 0 10px;
+          line-height: 1.5; }
+          .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan .screen-2__right-column__opisan__produk .screen-2__right-column__opisan__produk__obertk > h2 {
+            font-family: "GillSansNovaheavy";
+            font-size: 36px; }
+          .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan .screen-2__right-column__opisan__produk .screen-2__right-column__opisan__produk__obertk > p {
+            font-family: "GillSansNovaBook";
+            font-size: 18px; }
+          .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan .screen-2__right-column__opisan__produk .screen-2__right-column__opisan__produk__obertk .screen-2__right-column__opisan__produk__obertk__opistext {
+            padding-bottom: 10%; }
+          .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan .screen-2__right-column__opisan__produk .screen-2__right-column__opisan__produk__obertk .screen-2__right-column__opisan__produk__obertk__baranopis {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            padding-bottom: 10%; }
+            .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan .screen-2__right-column__opisan__produk .screen-2__right-column__opisan__produk__obertk .screen-2__right-column__opisan__produk__obertk__baranopis .screen-2__right-column__opisan__produk__obertk__baranopis__imgopis {
+              width: 20%;
+              height: 175px; }
+          .screen-2 .wrapper .screen-2__right-column .screen-2__right-column__opisan .screen-2__right-column__opisan__produk .screen-2__right-column__opisan__produk__obertk .screen-2__right-column__opisan__produk__obertk__baranopis____textopis {
+            width: 79.6666666%;
+            margin-left: 1%;
+            vertical-align: center; }
+
+.screen-3 {
+  outline: 1px solid red;
+  height: 500px; }
+  .screen-3__wrapper {
+    height: 100%;
+    color: red; }
