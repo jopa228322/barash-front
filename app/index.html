@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -19,7 +17,7 @@
 										<!--ПЕРВЫЙ ЭКРАН-->
 
 <section  id="screen-1" class="screen-1 screen" >
-	<header>
+	<header >
 		<div class="container row">
 			<div class="logoandmore">
 				<div id="logo" class="logo">
@@ -53,7 +51,7 @@
 				<div class="button-rectangle">
 					<a href="#">ЗАКАЗАТЬ</a>
 				</div>
-				<div id="delta">delta </div>
+				
 			</div>
 		</div>
 	<section class="screen-2 screen">
@@ -92,10 +90,10 @@
 								<h2>
 									НАШИ ПРОДУКТЫ
 								</h2>
-									<p>	
-									 Задача организации, в особенности же сложившаяся структура организации требуют от нас анализа соответствующий условий активизации. Повседневная практика показывает, что
-										 укрепление и развитие структуры требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
-									</p>
+								<p>
+									Задача организации, в особенности же сложившаяся структура организации требуют от нас анализа соответствующий условий активизации. Повседневная практика показывает, что
+									 укрепление и развитие структуры требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
+								</p>
 							</div>	
 							<div class="screen-2__right-column__opisan__produk__obertk__baranopis">
 								<div class="screen-2__right-column__opisan__produk__obertk__baranopis__imgopis">
@@ -134,6 +132,38 @@
 			</div>
 		</div>
 	</section>
+
+
+
+
+												<!-- ТРЕТИЙ ЭКРАН -->
+
+
+<section class="screen-3">
+		<div class="screen-3__wrapper">
+<footer class=" container">
+				<div class=" logoandmoref">
+					asdasdasdasd
+				</div>
+				
+			</footer>
+
+		</div>
+			
+		
+
+</section>  		
+
+
+
+
+
+
+
+
+
+
+
 		<script type="text/javascript">
 /*	$(".screen").on('mousewheel', function(event) {
 		onWheel(event, $(this));
@@ -166,8 +196,8 @@ function onWheel(e, th) {
   	};
 
  
-}*/
-  var elem = document.getElementById('logo');
+}
+ <!-- var elem = document.getElementById('logo');
 if (elem.addEventListener) {
   if ('onwheel' in document) {
     // IE9+, FF17+, Ch31+
@@ -195,7 +225,41 @@ function onWheel(e) {
 
   e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 }
+-->
+</script> 
+<script type="text/javascript">
+	var elem = document.getElementById('screen-1');
+	if (elem.addEventListener) {
+  if ('onwheel' in document) {
+    // IE9+, FF17+, Ch31+
+    elem.addEventListener("wheel", onWheel);
+  } else if ('onmousewheel' in document) {
+    // устаревший вариант события
+    elem.addEventListener("mousewheel", onWheel);
+  } else {
+    // Firefox < 17
+    elem.addEventListener("MozMousePixelScroll", onWheel);
+  }
+} else { // IE8-
+  elem.attachEvent("onmousewheel", onWheel);
+}
+
+function onWheel(e) {
+  e = e || window.event;
+			$(".screen-2").fadeIn(200, function(){
+				$(".screen-2__left-column").animate({
+					"left" : "0",
+				}, 400);
+				$(".screen-2__right-column").animate({
+					"right" : "0",
+				}, 400)
+			});
+ 
+  e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+}
 		
 	</script>
+		
+
 </body>
 </html>
