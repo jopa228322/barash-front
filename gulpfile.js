@@ -50,6 +50,7 @@ gulp.task('watch', ['browser-sync'], function() {
 gulp.task('default', ['watch']);
 
 
+
 /*---------------Сборка проекта--------------*/
 /*изображения*/
 gulp.task('img', function() {

@@ -15,8 +15,9 @@ a
 	text-decoration: none
 	transition: 0.5s all
 
+
 .container
-	max-width: 1379px
+	max-width: 1280px
 	margin: 0 auto
 	width: 100%
 	min-width: 320px
@@ -34,12 +35,51 @@ a
 
 .screen-1 
 	height: 100%
+	position: relative
+	z-index: 1
+
 	> header
-		height: 85px
+		.info
+			width: 100%
+			background-color: #212121
+			color: #ffffff
+			.kontakt
+				height: 50px
+				margin: 0 auto
+				max-width: 1280px
+				display: flex
+				.number
+					margin: 0 auto
+					align-items: center	
+					padding: 17px 0
+					width: 50%
+
+					>ul
+						display: flex
+						list-style-type: none
+						margin: 0
+						padding-left: 2.6%
+						>li
+							padding-right: 15px
+							font-size: 16px
+							>i
+								font-size: 16px
+				.adres
+					width: 50%
+					align-items: center	
+					padding: 17px 0
+					width: 50%
+					text-align: right
+					font-size: 16px
+					letter-spacing: 0.5px
+					>i
+						padding-right: 1%
+
 
 		.logoandmore
 			display: flex
 			width: 25.48%
+			height: 80px
 					
 			.logo
 				padding: 10px
@@ -65,6 +105,7 @@ a
 		.men 
 			width: 52%
 			align-items: center
+			height: 80px
 					
 			a
 				color: #212121
@@ -99,9 +140,10 @@ a
 
 	&__bottom
 		background-image: url("../img/fon.png")
-		height: calc(100% - 85px)
+		height: calc(100% - 130px)
 		background-size: cover
 		background-repeat: no-repeat
+		background-position: center center
 
 	.welcome
 		width: 55.58%
@@ -138,12 +180,12 @@ a
 		
 
 		.button-rectangle
-			width: 295px
+			width: 294px
 			text-align: center
 			border: 2px solid #fff
 			padding: 12px
 			position: relative
-			z-index: 3
+			z-index: 2
 			box-sizing: border-box 
 
 		.button-rectangle
@@ -159,10 +201,10 @@ a
 			opacity: 1
 			border: 2px solid #fff
 			position: absolute
-			top: -2px
+			top: -0.4px
 			left: -2px
-			width: 285px
-			height: 52px
+			width: 284px
+			height: 50px
 			z-index: 1
 			padding: 3px
 
@@ -174,22 +216,12 @@ a
 		.button-rectangle:hover:before
 			opacity: 1
 			left: 37px
-			width: 207px
+			width: 208px
 			background-color: #fff
 			transition: 0.8s
 			-webkit-transform: skew(-50deg)
 			-moz-transform: skew(-50deg)
 			-o-transform: skew(-50deg)
-
-
-	.left-column
-		width: 49%
-		background-image: url("../img/left-screen.png")
-		background-size: 100%
-		background-repeat: no-repeat
-		height: 90%
-
-
 
 .screen-2
 	height: 100%
@@ -198,6 +230,7 @@ a
 	bottom: 0
 	width: 100%
 	display: none
+	z-index: 3
 
 	.wrapper
 		height: 100%
@@ -212,7 +245,7 @@ a
 		.screen-2__left-column
 			background-color: white
 			left: -50%
-			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.42)
+			
 			background-image: url("../img/left-screen.png")
 			background-size: cover
 			background-repeat: no-repeat
@@ -221,7 +254,7 @@ a
 		.screen-2__right-column
 			background-color: white
 			right: -50%
-			box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.42)
+		
 
 			.screen-2__right-column__opisan
 				
@@ -232,9 +265,9 @@ a
 				padding-bottom: 3%
 
 				
-				.screen-2__right-column__opisan__produk
+				&__produk
 
-					.screen-2__right-column__opisan__produk__obertk
+					&__obertk
 						margin: 0 10px
 						line-height: 1.5
 
@@ -245,26 +278,301 @@ a
 							font-family: "GillSansNovaBook"
 							font-size: 18px	
 
-						.screen-2__right-column__opisan__produk__obertk__opistext
-							padding-bottom: 10%
-						.screen-2__right-column__opisan__produk__obertk__baranopis
+						&__opistext
+							padding-bottom: 3%		
+							>p
+								width: 90%
+							>hr
+								width: 26%
+								margin-left: 0		
+						&__baranopis
 							display: flex
 							padding-bottom: 10%
 							
-							.screen-2__right-column__opisan__produk__obertk__baranopis__imgopis
+							&__imgopis
 								width: 20%
 								height: 175px
-						.screen-2__right-column__opisan__produk__obertk__baranopis____textopis
-							width: 79.6666666%
-							margin-left: 1%
-							vertical-align: center
+								padding-right: 2.5%
+							&__textopis
+								width: 79.6666666%
+								margin-left: 1%
+								padding-top: 3%
 
-.screen-3							
-	outline: 1px solid red
-	height: 500px
+
+.screen-3	
+	height: 100%
+	position: fixed
+	top: 0
+	bottom: 0
+	width: 100%
+	display: none
+	z-index: 4
+
+	.wrapper
+		height: 100%
+
+		.screen-3__left-column, .screen-3__right-column
+			width: 50%
+			min-width: 640px
+			height: 100%
+			position: relative
+
+
+		.screen-3__left-column
+			background-color: white
+			left: -50%
+			background-image: url("../img/left-screen.png")
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: +97% 0
+
+		.screen-3__right-column
+			background-color: white
+			right: -50%
+		
+
+			&__opisan
+				
+				width: 90%
+				height: 100%
+				margin: 0 auto
+				padding-top: 3%
+				padding-bottom: 3%
+
+				
+				&__produk
+
+					&__obertk
+						margin: 0 10px
+						line-height: 1.5
+
+						>h2
+							font-family: "GillSansNovaheavy"
+							font-size: 36px	
+						>p	
+							font-family: "GillSansNovaBook"
+							font-size: 18px	
+
+						&__opistext
+							padding-bottom: 3%		
+							>p
+								width: 90%
+							>hr
+								width: 26%
+								margin-left: 0	
+						&__baranopis
+							display: flex
+							padding-bottom: 10%
+							
+							&__imgopis
+								width: 20%
+								height: 175px
+								padding-right: 2.5%
+							&__textopis
+								width: 79.6666666%
+								margin-left: 1%
+								padding-top: 3%
+
+
+.screen-4					
+	position: relative
+	z-index: 5
 
 	&__wrapper
 		height: 100%
-		color: red
+		color: black
+		&__containerfoot
+			max-width: 1280px
+			margin: 0  auto 
+			width: 100%
+			min-width: 320px
 
 		
+
+			&__menufoot
+				width: 80%
+				margin: 0 auto 1%
+				display: flex
+				&__men
+					width: 70%
+					align-items: center
+					height: 43px
+					>a
+						color: #212121
+						display: block
+						font-family: "GillSansNovaBook"
+						font-size: 18px
+						letter-spacing: 0.5px
+						margin-bottom: 1%
+						>i
+							font-size: 30px
+							margin: 0
+				&__socfoot
+					width: 29%
+					
+					>a
+						color: #212121	
+						margin: 0 auto	
+						font-size: 30px	
+						margin: 7px 0 0 8%
+							
+							
+
+						
+			&__logoandmoref
+				margin: 0 auto
+				width: 50%
+				height: 100%
+				display: flex
+				padding: 15px
+				align-items: center
+				justify-content: center
+				&__logof
+					width: 14.46%
+					padding: 10px
+
+				&__freshmeatf
+					>h2
+						margin: 10px
+						font-family: "GillSansNovaBook"
+						font-size: 40.5px
+						letter-spacing: 0.5px
+						line-height: 1
+					>h5
+						padding: 0
+						font-family: "GillSansNovaBook"
+						font-size: 16.5px
+						letter-spacing: 1.4px
+						margin: 10px 
+
+
+.bgc
+	position: fixed 
+	background-color: rgba(33, 33, 33, 0.5)
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	.enter 
+		margin: calc(33% - 434px) auto 0
+		background-color: #fff
+		width: 33%
+		box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3)
+		.vhod
+			padding-top: 3%
+			text-align: center
+			margin: 0 auto
+			display: space-around
+			>h1
+				font-size: 36px;
+		.sign-up
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%
+			.registr
+				text-align: right
+				font-size: 18.64px
+				>a
+					color: #212121
+					border-bottom: 2px dashed #212121 
+				a:hover
+					color:rgba(33, 33, 33, 0.73)
+					transition: 0.5s all
+		.log
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%;
+			.form-log
+				width: 100%
+				text-align: center
+				>input
+					width: 95%
+					padding: 2% 2% 2% 2%
+					outline: 2px solid #212121
+					font-size: 18.64px
+		.email
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%;
+			.form-email
+				width: 100%
+				text-align: center
+				>input
+					width: 95%
+					padding: 2% 2% 2% 2%
+					outline: 2px solid #212121
+					font-size: 18.64px
+		.pass
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%;
+			.form-pass
+				width: 100%
+				text-align: center
+				>input
+					width: 95%
+					padding: 2% 2% 2% 2%
+					outline: 2px solid #212121
+					font-size: 18.64px
+		.name
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%
+			.form-name
+				width: 100%
+				text-align: center
+				>input
+					width: 95%
+					padding: 2% 2% 2% 2%
+					outline: 2px solid #212121
+					font-size: 18.64px
+		.surname
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 4%
+			.form-surname
+				width: 100%
+				text-align: center
+				>input
+					width: 95%
+					padding: 2% 2% 2% 2%
+					outline: 2px solid #212121
+					font-size: 18.64px
+		.authorize
+			margin: 0 auto
+			width: 86%
+			padding-top: 4%
+			padding-bottom: 5%
+			.form-authorize
+				width: 100%
+				text-align: center
+				input
+					width: 100%
+					padding: 2% 2% 2% 2%
+					color: white
+					font-size: 18px
+					background-color: #212121
+					outline: 2px solid #212121
+					margin: 0 auto
+	.successful-enter
+		margin: calc(33% - 434px) auto 0
+		background-color: #fff
+		width: 33%
+		box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3)
+		.imgs
+			width: 45%
+			margin: 0 auto
+			padding-top: 10%
+		.successful-authorize
+			width: 70%
+			margin: 0 auto
+			text-align: center
+			font-size: 18px
+			padding-top: 10%
+			padding-bottom: 10%
